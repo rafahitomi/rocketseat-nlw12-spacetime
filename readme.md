@@ -1,10 +1,14 @@
-<p align="center">
-  <img src="./github/preview.png" alt="Demonstração do projeto" width="100%" />
-</p>
+# NLW 12° Edição - Spacetime
 
 ## 🖥️ Projeto
 
-Esse é um projeto Web Responsivo de uma cápsula do tempo para exibir memórias em uma linha do tempo.
+Esse é um projeto Web Responsivo de uma cápsula do tempo, onde o usuário poderá adicionar memórias à uma timeline de acontecimentos marcantes da vida em uma linha do tempo.
+
+<p align="center">
+  <img src="./assets/preview.png" alt="Demonstração do projeto" width="100%" />
+</p>
+
+---
 
 ## 🚀 Tecnologias
 
@@ -13,6 +17,8 @@ Esse projeto foi desenvolvido durante o NLW da Rocketseat com as seguintes tecno
 - HTML
 - CSS
 - Git e GitHub
+
+---
 
 ## 🏷️ Layout
 
