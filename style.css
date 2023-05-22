@@ -8,6 +8,7 @@
   font-size: 16px;
 }
 
+/* customização da scrollbar */
 ::-webkit-scrollbar {
   /* customizar a barra lateral */
   width: 8px;
@@ -23,6 +24,7 @@
   background-color: #9e9ea0;
 }
 
+/* animações */
 @keyframes entering {
   from {
     opacity: 0;
@@ -42,7 +44,7 @@ body {
 
   display: grid;
   grid-template-areas: "profile timeline";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 100vh;
 }
 
@@ -66,7 +68,7 @@ aside {
 
 aside * {
   /* seleciona todos os elementos do aside (exceto background e linha lateral) */
-  animation: entering 0.7s ease-in-out;
+  animation: entering 1s ease-in-out;
 }
 
 aside img:nth-child(2) {
@@ -95,7 +97,7 @@ nav {
 
   overflow-y: scroll; /* quando o conteúdo não couber na vertical, habilita o scroll para rolar (enquanto que o "profile" ficará estático)*/
 
-  animation: entering 0.7s ease-in-out;
+  animation: entering 2s ease-in-out;
 }
 
 .memory {
@@ -109,8 +111,8 @@ nav {
 }
 
 .memory small {
-  color: #bebebf;
   font-size: 0.75rem;
+  color: #bebebf;
 }
 
 .memory h1 {
@@ -118,20 +120,20 @@ nav {
   color: #eaeaea;
 }
 
-.memory img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
-
-  transition: transform 0.3s ease-in-out;
-}
-
 .memory div {
   width: 100%;
   height: 280px;
-  overflow: hidden; /* "quando o conteúdo não couber nas dimensões acima, o restante da imagem ficará estendida (zoom) */
+  overflow: hidden; /* "quando o conteúdo não couber nas dimensões acima, o restante da imagem ficará estendida (zoom)" */
   border-radius: 8px;
+}
+
+.memory img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover; /* utilizado para manter a proporção e dar “zoom” da imagem */
+  border-radius: 8px;
+
+  transition: transform 0.3s ease-in-out;
 }
 
 .memory:hover img {
@@ -144,6 +146,7 @@ nav {
   line-height: 28px;
 }
 
+/* responsividade */
 @media (max-width: 768px) {
   /* quando estiver numa tela de no máximo 768px, o que prevalece é a estilização contida aqui */
   :root {
